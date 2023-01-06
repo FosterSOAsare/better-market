@@ -3,6 +3,7 @@
 	let form = document.querySelector("form");
 	let inputs = document.querySelectorAll("form input");
 	let labels = document.querySelectorAll("form label");
+	let errors = document.querySelectorAll("form .err");
 
 	form.addEventListener("submit", (e) => {
 		e.preventDefault();
@@ -55,6 +56,9 @@
 			labels.forEach((e) => {
 				e.style.color = "black";
 			});
+			errors.forEach((e) => {
+				e.style.display = "none";
+			});
 		});
 	});
 })();
@@ -64,6 +68,9 @@ function displayError(selector, text) {
 	let form_element = form.querySelector(`#${selector}`);
 	let input = form_element.querySelector("input");
 	let label = form_element.querySelector("label");
+	let err = form_element.querySelector(".err");
+	err.textContent = text;
+	err.style.display = "block";
 	input.style.borderBottomColor = "red";
 	label.style.color = "red";
 }
