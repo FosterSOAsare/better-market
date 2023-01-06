@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/output.css" />
+	</head>
+	<body class="w-full h-[100vh] bg-background flex items-center justify-center font-poppins">
+		<section class="w-[80%] h-[80%] max-w-[760px] rounded-[32px] overflow-x-hidden flex justify-between items-center">
+			<div class="w-[40%] h-[100%] bg-[#084B3E] p-[30px] relative">
+				<div class="logo w-[100px] h-[60px]">
+					<img src="./images/logo.png" alt="Logo" class="w-full h-full" />
+				</div>
+				<p class="absolute bottom-[30px] left-[30px] w-[220px] text-[19px] text-[#F9E2BA] h-auto">Say hello to global food and beverage producers and suppliers, all in one place</p>
+			</div>
+			<div class="w-[60%] h-[100%] bg-white p-[30px] relative">
+				<p class="font-bold w-[50%]">
+					Let’s get started <br />
+					with a few simple steps
+				</p>
+
+				<form action="" class="w-full h-auto my-[30px]">
+					<div class="form_element w-full h-[40px] mb-[30px]" id="email">
+						<label for="email" class="text-[10px] font-normal tracking-[1px]">Email:</label>
+						<input type="text" id="email" name="email" class="w-[70%] h-[15px] block border-b-[1px] border-[#343434] focus:outline-none py-[3px] text-[12px]" />
+					</div>
+					<div class="form_element w-full h-[40px] mb-[30px]" id="name">
+						<label for="fullname" class="text-[10px] font-normal tracking-[1px]">Full name:</label>
+						<input type="text" id="fullname" name="name" class="w-[70%] h-[15px] block border-b-[1px] border-[#343434] focus:outline-none py-[3px] text-[12px]" />
+					</div>
+					<div class="form_element w-full h-[40px] mb-[30px]" id="password">
+						<label for="password" class="text-[10px] font-normal tracking-[1px]">Password:</label>
+						<input type="password" id="password" name="password" class="w-[70%] h-[15px] block border-b-[1px] border-[#343434] focus:outline-none py-[3px] text-[12px]" />
+					</div>
+					<button class="w-[70%] h-[40px] bg-[#00C38B] rounded-[12px] text-white text-[12px]">Sign Up</button>
+				</form>
+
+				<div class="agreement w-auto h-[40px] absolute bottom-[30px] left-[30px]">
+					<p class="text-[8px] opacity-[0.7]">By signing up, you agree to our Terms of Service.</p>
+					<p class="text-[8px] opacity-[0.7]">Already have an account? <a href="" class="text-[#19B07E] font-600">Log in</a></p>
+				</div>
+			</div>
+		</section>
+		<script src="./app.js"></script>
+	</body>
+</html>
